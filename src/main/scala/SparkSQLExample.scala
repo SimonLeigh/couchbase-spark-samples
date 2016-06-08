@@ -37,7 +37,7 @@ object SparkSQLExample {
     val sql = new SQLContext(sc)
 
     // Plain old Spark emitting RDDs from a N1QL Query result
-    sc.couchbaseQuery(N1qlQuery.simple("SELECT * from `travel-sample` LIMIT 10"))
+    sc.couchbaseQuery(N1qlQuery.simple("SELECT * from `travel-sample` LIMIT 100"))
       .collect()
       .foreach(println)
 

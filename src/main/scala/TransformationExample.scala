@@ -48,7 +48,7 @@ object TransformationExample {
     JsonDocument.create(s._1, JsonObject.fromJson(s._2))
   }
 
-  /** Returns an RDD based on email address extraced from the document */
+  /** Returns an RDD based on email address extracted from the document */
   def CreateMappableRdd(s: (String, String)): (String, JsonDocument) = {
     val return_doc = JsonDocument.create(s._1, JsonObject.fromJson(s._2))
     (return_doc.content().getString("email"), return_doc)

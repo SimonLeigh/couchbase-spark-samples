@@ -12,5 +12,7 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-sql" % "1.6.1",
   "com.couchbase.client" %% "spark-connector" % "1.2.0",
   "org.apache.spark" %% "spark-streaming-twitter" % "1.6.1",
-  "mysql" % "mysql-connector-java" % "5.1.37"
+  "mysql" % "mysql-connector-java" % "5.1.37",
+  "io.codearte.jfairy" % "jfairy" % "0.5.3",
+  "org.slf4j" % "slf4j-api" % "1.7.10" exclude("io.codearte.jfairy", "jfairy")
 )
