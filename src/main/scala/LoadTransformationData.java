@@ -42,7 +42,7 @@ import static com.couchbase.spark.japi.CouchbaseSparkContext.couchbaseContext;
 
 public class LoadTransformationData {
 
-    private static final int NUM_RECORDS = 10;
+    private static final int NUM_RECORDS = 10000;
     static Random randomGenerator = new Random();
     static Fairy fairy = Fairy.create();
 
